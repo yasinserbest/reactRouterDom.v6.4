@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+@import "../../styles/utilities";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 25rem;
+    height: 12rem;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__mainList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    column-gap: 3rem;
+
+    &--mainItem {
+      font-size: 2.2rem;
+      text-decoration: none;
+      color: black;
+      transition: all 0.2s;
+      cursor: pointer;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__subList {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+
+    &--subItem {
+      color: black;
+      transition: all 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+
+      font-size: 1.7rem;
+      display: inline-block;
+      margin-top: 2px;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  &__innerList {
+    position: relative;
+    &:hover {
+      .header__subList {
+        display: block !important;
+      }
+    }
+  }
+}

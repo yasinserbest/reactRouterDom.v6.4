@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+@import "../../styles/utilities";
+
+.product {
+  padding: 2rem 2rem 3rem 2rem;
+  max-width: 24rem;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+  &__images {
+    width: 24rem;
+    height: 35rem;
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__name {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: black;
+  }
+  &__brand {
+    font-size: 1.2rem;
+    color: grey;
+  }
+  &__rating {
+    color: $color-primary;
+  }
+  &__prices {
+    display: flex;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+
+    &--price {
+      margin-right: 1rem;
+      color: red;
+      text-decoration: line-through;
+    }
+    &--discountPrice {
+      color: green;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.navbar {
+  margin-top: 2rem;
+  background-color: $color-primary;
+  color: white;
+  padding: 1.2rem 1rem;
+}
+.categories {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+    &--title {
+      font-size: 2rem;
+      transition: all 0.2s;
+    }
+    &:hover {
+      .categories__item--title {
+        color: $color-hover;
+      }
+      .category {
+        display: block;
+        background-color: $color-primary;
+      }
+      &:last-child .category {
+        transform: translateX(-2rem);
+      }
+    }
+  }
+}
+.category {
+  list-style: none;
+  position: flex;
+  display: none;
+  position: absolute;
+  background-color: white;
+
+  &__item {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+}

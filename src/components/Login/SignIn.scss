@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+@import "../../styles/utilities";
+.loginForm {
+  width: 50%;
+  margin: 4rem auto 0 auto;
+
+  &__buttons {
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 3rem;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    &--links {
+      display: flex;
+      column-gap: 2rem;
+
+      &-item {
+        font-size: 1.5rem;
+        transition: all 0.2s;
+        &:hover {
+          transform: translateY(3px);
+        }
+      }
+    }
+  }
+}

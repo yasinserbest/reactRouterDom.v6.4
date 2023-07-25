@@ -1,0 +1,24 @@
+.flex {
+  display: flex !important;
+}
+
+.space-between {
+  justify-content: space-between !important;
+}
+.mt-s {
+  margin-top: 0.5rem !important;
+}
+.mb-m {
+  margin-bottom: 1rem !important;
+}
+.mt-m {
+  margin-top: 2rem !important;
+}
+.fs-m {
+  font-size: 1.4rem !important;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
